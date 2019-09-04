@@ -12,13 +12,13 @@ public class PalindromeDetectorTest {
 	}
 	
 	@Test
-	public void testIsPalindrome_true_noSpecialChar() {
-		assertTrue(PalindromeDetector.isPalindrome("bob"));
+	public void testIsPalindrome_true_diffCases() {
+		assertTrue(PalindromeDetector.isPalindrome("boB"));
 	}
 	
 	@Test
-	public void testIsPalindrome_true_diffCases() {
-		assertTrue(PalindromeDetector.isPalindrome("boB"));
+	public void testIsPalindrome_true_noSpecialChar() {
+		assertTrue(PalindromeDetector.isPalindrome("bob"));
 	}
 	
 	@Test
