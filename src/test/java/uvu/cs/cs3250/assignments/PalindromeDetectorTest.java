@@ -1,6 +1,9 @@
 package uvu.cs.cs3250.assignments;
 
-import org.junit.Test;
+import org.junit.Test; 
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class PalindromeDetectorTest {
 	@Test
@@ -22,9 +25,15 @@ public class PalindromeDetectorTest {
 	public void testIsPalindrome_true_wihSpecialChar() {
 		assertTrue(PalindromeDetector.isPalindrome("b,o$b!"));
 	}
+
+	@Test
+	public void testIsPalindrome_true_empty() {
+		assertTrue(PalindromeDetector.isPalindrome(""));
+	}
 	
 	@Test
 	public void testIsPalindrome_false() {
 		assertFalse(PalindromeDetector.isPalindrome("trigger"));
 	}
+
 }
