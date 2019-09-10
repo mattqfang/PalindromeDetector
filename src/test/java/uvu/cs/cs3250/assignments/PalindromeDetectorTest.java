@@ -1,5 +1,8 @@
 package uvu.cs.cs3250.assignments;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 
 public class PalindromeDetectorTest {
@@ -26,5 +29,11 @@ public class PalindromeDetectorTest {
 	@Test
 	public void testIsPalindrome_false() {
 		assertFalse(PalindromeDetector.isPalindrome("trigger"));
+	}
+	
+	@Test
+	public void testIsPalindrome_emptyString() {
+		//Empty string is false
+		assertFalse(PalindromeDetector.isPalindrome(""));
 	}
 }

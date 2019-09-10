@@ -7,39 +7,26 @@ public class PalindromeDetector {
 		System.out.println(isPalindrome("#B%ob"));
 	}
 	public static boolean isPalindrome(String str) {
-		String backwardString, forwardString;
-		char lastChar, firstChar;
 		int lastIndex, firstIndex;
-		if(str == null) {
-			return false;
-		}
-		else if(str == "") {
+		if(str == null || str == "" || str == " ") {
 			return false;
 		}
 		else{
-			str.toLowerCase();
+			str = str.replaceAll("\\W", "").toLowerCase();
 			lastIndex = str.length()-1; 
 			firstIndex = 0;
-			forwardString = "";
-			backwardString = "";
 			for(int i = 0; i < str.length(); i++) {
-				lastChar = str.charAt(lastIndex);
-				firstChar = str.charAt(firstIndex);
-				if(!isSpecialCharacter(firstChar)) {
-					forwardString += firstChar;
-				}
-				if(!isSpecialCharacter(lastChar)) {
-					backwardString += lastChar;
+				if(str.charAt(lastIndex) != str.charAt(firstIndex)) {
+					return false;
 				}
 				lastIndex--;
-				firstChar++;
+				firstIndex++;
 			}
-			return forwardString.equals(backwardString);
+			return true;
 		}
 	}
 	
-	public static boolean isSpecialCharacter(char c) {
-		char[] normalChar = {}
-	}
+	//Try to find a way that doesn't use repla
+
 
 }
