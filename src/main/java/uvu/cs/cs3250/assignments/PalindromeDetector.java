@@ -4,7 +4,7 @@ package uvu.cs.cs3250.assignments;
 public class PalindromeDetector {
     static boolean isPalindrome(String s) {
         String reverseString = StringReverser(s);
-        return s.compareTo(reverseString) == 0;
+        return s.equals(reverseString);
     }
 
     private static String StringReverser(String s){
