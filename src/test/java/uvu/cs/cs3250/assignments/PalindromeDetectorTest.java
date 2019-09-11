@@ -1,5 +1,6 @@
 package uvu.cs.cs3250.assignments;
 
+//I had to import these libraries to make the tests work.
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
