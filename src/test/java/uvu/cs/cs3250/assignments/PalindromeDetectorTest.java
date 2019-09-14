@@ -1,6 +1,7 @@
 package uvu.cs.cs3250.assignments;
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class PalindromeDetectorTest {
 	@Test
