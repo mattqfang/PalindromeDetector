@@ -28,4 +28,8 @@ public class PalindromeDetectorTest {
 	public void testIsPalindrome_false() {
 		assertFalse(PalindromeDetector.isPalindrome("trigger"));
 	}
+	@Test
+	public void testIsPalindrome_blank() {
+		assertTrue(PalindromeDetector.isPalindrome(""));
+	}
 }
