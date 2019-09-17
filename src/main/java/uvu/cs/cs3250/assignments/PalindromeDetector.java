@@ -16,8 +16,6 @@ public class PalindromeDetector {
 		for (i = 0; i < pOrig.length; i++)
 			if (Character.isLetter(pOrig[i]))
 				++numLetters;
-		// Print contents of original array
-		System.out.println(pOrig);
 		
 		// Create char arrays only as big as there are letters in original
 		char[] pForward = new char[numLetters];
@@ -28,18 +26,15 @@ public class PalindromeDetector {
 		for (i = 0; i < pOrig.length; i++)
 			if (Character.isLetter(pOrig[i]))
 				pForward[j++] = pOrig[i];
-		// Print contents of forward array
-		System.out.println(pForward);
 		
 		// Add all the letters back to front into another char array
 		j = numLetters - 1;
 		for (i = 0; i < numLetters; i++)
 			pReverse[i] = pForward[j--];
-		// Print contents of reversed array
-		System.out.println(pReverse);
 		
 		String forward = "", reverse = "";
 		
+		// Concat each char array to a string variable to be compared
 		for (i = 0; i < numLetters; i++)
 		{
 			forward += pForward[i];
