@@ -38,9 +38,13 @@ public class PalindromeDetector {
 		// Print contents of reversed array
 		System.out.println(pReverse);
 		
-		// Convert the char arrays back into strings and trim them
-		String forward = pForward.toString().trim();
-		String reverse = pReverse.toString().trim();
+		String forward = "", reverse = "";
+		
+		for (i = 0; i < numLetters; i++)
+		{
+			forward += pForward[i];
+			reverse += pReverse[i];
+		}
 		
 		if (forward.equals(reverse))
 			return true;
