@@ -1,0 +1,12 @@
+package uvu.cs.cs3250.assignments;
+
+public class PalindromeDetector {
+
+	public static void main(String[] args) {
+		
+	}
+	public static boolean isPalendrome(String[] string) {
+	
+	}
+
+}
